@@ -12817,13 +12817,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 const topClipRightP = document.getElementById('topClipRightP');
 const topClipLeftP = document.getElementById('topClipLeftP');
-//
-// velocity(topClipRightP, {
-//   translateX: [0, '100%'],
-//   translateY: [0, '100%']
-// }, {
-//   duration: 300
-// });
+
+__WEBPACK_IMPORTED_MODULE_1_velocity_animate___default()(topClipLeftP, {
+  translateX: [0, '100%'],
+  translateY: [0, '100%']
+}, {
+  duration: 300
+});
 
 __WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].fromTo(topClipRightP, 0.5, {
   attr: {
@@ -12835,11 +12835,11 @@ __WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].fromTo(topClipRightP, 0.5, {
   }
 });
 
-__WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].from(topClipLeftP, 0.3, {
-  attr: {
-    points: '-200,335 175,620 -200,910'
-  }
-});
+// TweenMax.from(topClipLeftP, 0.3, {
+//   attr: {
+//     points: '-200,335 175,620 -200,910'
+//   }
+// });
 
 /***/ })
 /******/ ]);

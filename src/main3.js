@@ -3,13 +3,13 @@ import velocity from 'velocity-animate';
 
 const topClipRightP = document.getElementById('topClipRightP');
 const topClipLeftP = document.getElementById('topClipLeftP');
-//
-// velocity(topClipRightP, {
-//   translateX: [0, '100%'],
-//   translateY: [0, '100%']
-// }, {
-//   duration: 300
-// });
+
+velocity(topClipLeftP, {
+  translateX: [0, '100%'],
+  translateY: [0, '100%']
+}, {
+  duration: 300
+});
 
 TweenMax.fromTo(topClipRightP, 0.5, {
   attr: {
@@ -21,8 +21,8 @@ TweenMax.fromTo(topClipRightP, 0.5, {
   }
 });
 
-TweenMax.from(topClipLeftP, 0.3, {
-  attr: {
-    points: '-200,335 175,620 -200,910'
-  }
-});
+// TweenMax.from(topClipLeftP, 0.3, {
+//   attr: {
+//     points: '-200,335 175,620 -200,910'
+//   }
+// });
