@@ -8,6 +8,7 @@ velocity(topClipLeftP, {
   translateX: [0, '100%'],
   translateY: [0, '100%']
 }, {
+  delay: 1000,
   duration: 300
 });
 

@@ -12822,6 +12822,7 @@ __WEBPACK_IMPORTED_MODULE_1_velocity_animate___default()(topClipLeftP, {
   translateX: [0, '100%'],
   translateY: [0, '100%']
 }, {
+  delay: 1000,
   duration: 300
 });
 
