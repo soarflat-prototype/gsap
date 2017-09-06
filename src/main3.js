@@ -1,8 +1,8 @@
 import { TweenMax } from 'gsap';
 import velocity from 'velocity-animate';
 
-const topClipRightP = document.getElementById('topClipRightP');
-const topClipLeftP = document.getElementById('topClipLeftP');
+var topClipRightP = document.getElementById('topClipRightP');
+var topClipLeftP = document.getElementById('topClipLeftP');
 
 velocity(topClipLeftP, {
   translateX: [0, '100%'],

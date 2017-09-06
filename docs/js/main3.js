@@ -12815,8 +12815,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-const topClipRightP = document.getElementById('topClipRightP');
-const topClipLeftP = document.getElementById('topClipLeftP');
+var topClipRightP = document.getElementById('topClipRightP');
+var topClipLeftP = document.getElementById('topClipLeftP');
 
 __WEBPACK_IMPORTED_MODULE_1_velocity_animate___default()(topClipLeftP, {
   translateX: [0, '100%'],
