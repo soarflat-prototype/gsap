@@ -19,12 +19,6 @@
 </head>
 <body>
   <svg id="top" width="750" height="1216">
-    <image class="imageRight" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/ned.png" x="50%" y="538" width="50%" height="572" preserveaspectratio="xMidYMid slice" clip-path="url(#topClipRight)"></image>
-    <!--<image class="imageLeft" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/ned.png" y="538" width="50%" height="572" preserveaspectratio="xMidYMid slice" clip-path="url(#topClipLeft)"></image>-->
-    <rect clip-path="url(#topClipLeft)" x="0" y="538" width="50%" height="572" fill="lightpink"/>
-  </svg>
-
-  <svg class="mask" width="750" height="1216">
     <mask>
       <clippath id="topClipRight" clip-rule="evenodd">
         <polygon id="topClipRightP" points="750,535 750,1110 375,820" transform="translate(100)"></polygon>
@@ -33,7 +27,21 @@
         <polygon id="topClipLeftP" points="0,535 375,820 0,1110" transform="translate(100)"></polygon>
       </clippath>
     </mask>
+    <image class="imageRight" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/ned.png" x="50%" y="538" width="50%" height="572" preserveaspectratio="xMidYMid slice" clip-path="url(#topClipRight)"></image>
+    <!--<image class="imageLeft" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/ned.png" y="538" width="50%" height="572" preserveaspectratio="xMidYMid slice" clip-path="url(#topClipLeft)"></image>-->
+    <rect clip-path="url(#topClipLeft)" x="0" y="538" width="50%" height="572" fill="lightpink"/>
   </svg>
+
+  <!--<svg class="mask" width="750" height="1216">-->
+  <!--<mask>-->
+  <!--<clippath id="topClipRight" clip-rule="evenodd">-->
+  <!--<polygon id="topClipRightP" points="750,535 750,1110 375,820" transform="translate(100)"></polygon>-->
+  <!--</clippath>-->
+  <!--<clippath id="topClipLeft">-->
+  <!--<polygon id="topClipLeftP" points="0,535 375,820 0,1110" transform="translate(100)"></polygon>-->
+  <!--</clippath>-->
+  <!--</mask>-->
+  <!--</svg>-->
 
   <script src="./js/main3.js"></script>
 </body>
