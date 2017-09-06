@@ -12817,22 +12817,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 const topClipRightP = document.getElementById('topClipRightP');
 const topClipLeftP = document.getElementById('topClipLeftP');
+//
+// velocity(topClipRightP, {
+//   translateX: [0, '100%'],
+//   translateY: [0, '100%']
+// }, {
+//   duration: 300
+// });
 
-__WEBPACK_IMPORTED_MODULE_1_velocity_animate___default()(topClipRightP, {
-  translateX: [0, '100%'],
-  translateY: [0, '100%']
+__WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].fromTo(topClipRightP, 0.5, {
+  attr: {
+    transform: 'translate(100,100)'
+  }
 }, {
-  duration: 300
+  attr: {
+    transform: 'translate(0,0)'
+  }
 });
 
-// TweenMax.fromTo("#triangle2", 0.5, {
-//   x: 200,
-//   y: 200,
-// }, {
-//   x: 0,
-//   y: 0,
-// });
-//
 __WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].from(topClipLeftP, 0.3, {
   attr: {
     points: '-200,335 175,620 -200,910'
