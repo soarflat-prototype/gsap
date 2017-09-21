@@ -7,5 +7,16 @@ function promise() {
 }
 
 promise().then(() => {
-  alert('resolve native');
+  alert('resolve native are');
 });
+
+class A {
+  constructor(name) {
+    this.name;
+  }
+
+  say() {
+    console.log(22);
+    console.log(this.name)
+  }
+}

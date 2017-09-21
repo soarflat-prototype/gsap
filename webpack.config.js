@@ -16,13 +16,10 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel-loader',
-      options: {
-        presets: ['env'],
-      }
     }],
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'docs'),
     port: 3000,
   },
-}
+};
