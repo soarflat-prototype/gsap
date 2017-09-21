@@ -14,5 +14,8 @@
     "velocity-animate": "^1.5.0",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.1"
   }
 }
