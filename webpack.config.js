@@ -4,7 +4,8 @@ module.exports = {
   entry: {
     main: './src/main.js',
     main2: './src/main2.js',
-    main3: './src/main3.js'
+    main3: './src/main3.js',
+    main4: './src/main4.js'
   },
   output: {
     filename: '[name].js',
