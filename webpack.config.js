@@ -10,8 +10,18 @@ module.exports = {
     filename: '[name].js',
     path: path.join(__dirname, 'docs/js')
   },
+  module: {
+    rules: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader',
+      options: {
+        presets: ['env'],
+      }
+    }],
+  },
   devServer: {
     contentBase: path.resolve(__dirname, 'docs'),
     port: 3000,
   },
-};
+}

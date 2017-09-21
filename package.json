@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --no-info"
+    "dev": "webpack-dev-server --inline --hot --no-info",
+    "webpack": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +14,35 @@
     "gsap": "^1.20.2",
     "velocity-animate": "^1.5.0",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
+    "webpack-dev-server": "^2.7.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0"
   },
   "dependencies": {
     "es6-promise": "^4.1.1"
+  },
+  "babel": {
+    "env": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": [
+                "last 2 Chrome versions",
+                "last 2 Edge versions",
+                "Explorer >= 9",
+                "last 2 Firefox versions",
+                "last 2 Safari versions",
+                "iOS >= 9",
+                "Android >= 4.0",
+                "last 2 ChromeAndroid versions"
+              ]
+            }
+          }
+        ]
+      ]
+    }
   }
 }

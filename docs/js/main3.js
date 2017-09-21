@@ -96,23 +96,26 @@ module.exports = g;
 /* 3 */,
 /* 4 */,
 /* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_es6_promise__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_es6_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_es6_promise__);
 
+
+var _es6Promise = __webpack_require__(6);
+
+var _es6Promise2 = _interopRequireDefault(_es6Promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function promise() {
-  return new __WEBPACK_IMPORTED_MODULE_0_es6_promise___default.a((resolve) => {
-    setTimeout(() => {
+  return new _es6Promise2.default(function (resolve) {
+    setTimeout(function () {
       resolve();
-    }, 3000)
+    }, 3000);
   });
 }
 
-promise().then(() => {
+promise().then(function () {
   alert('resolve');
 });
 

@@ -12802,34 +12802,36 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS
 
 /***/ }),
 /* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_gsap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_velocity_animate__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_velocity_animate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_velocity_animate__);
 
 
+var _gsap = __webpack_require__(1);
 
-const triangle = document.getElementById('triangle');
+var _velocityAnimate = __webpack_require__(2);
 
-__WEBPACK_IMPORTED_MODULE_1_velocity_animate___default()(triangle, {
+var _velocityAnimate2 = _interopRequireDefault(_velocityAnimate);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var triangle = document.getElementById('triangle');
+
+(0, _velocityAnimate2.default)(triangle, {
   translateX: [0, 300]
 }, {
   duration: 300
 });
 
-__WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].fromTo("#triangle2", 0.5, {
+_gsap.TweenMax.fromTo("#triangle2", 0.5, {
   x: 200,
-  y: 200,
+  y: 200
 }, {
   x: 0,
-  y: 0,
+  y: 0
 });
 
-__WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].fromTo("#triangle3", 0.5, {
+_gsap.TweenMax.fromTo("#triangle3", 0.5, {
   attr: {
     points: '380,0 380,380 190,190'
   }
@@ -12838,7 +12840,6 @@ __WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].fromTo("#triangle3", 0.5, {
     points: '0,0 0,380 190,190'
   }
 });
-
 
 /***/ })
 /******/ ]);

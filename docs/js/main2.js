@@ -12803,21 +12803,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS
 /***/ }),
 /* 3 */,
 /* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_gsap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_velocity_animate__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_velocity_animate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_velocity_animate__);
 
 
+var _gsap = __webpack_require__(1);
 
-const topClipRightP = document.getElementById('topClipRightP');
-const topClipLeftP = document.getElementById('topClipLeftP');
+var _velocityAnimate = __webpack_require__(2);
 
-__WEBPACK_IMPORTED_MODULE_1_velocity_animate___default()(topClipRightP, {
+var _velocityAnimate2 = _interopRequireDefault(_velocityAnimate);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var topClipRightP = document.getElementById('topClipRightP');
+var topClipLeftP = document.getElementById('topClipLeftP');
+
+(0, _velocityAnimate2.default)(topClipRightP, {
   translateX: [0, '100%'],
   translateY: [0, '100%']
 }, {
@@ -12832,7 +12834,7 @@ __WEBPACK_IMPORTED_MODULE_1_velocity_animate___default()(topClipRightP, {
 //   y: 0,
 // });
 //
-__WEBPACK_IMPORTED_MODULE_0_gsap__["TweenMax"].from(topClipLeftP, 0.3, {
+_gsap.TweenMax.from(topClipLeftP, 0.3, {
   attr: {
     points: '-200,335 175,620 -200,910'
   }
